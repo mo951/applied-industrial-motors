@@ -1,0 +1,41 @@
+@import 'views/login';
+.height-100vh{
+    height: 100vh;
+}
+.ck-content > * {
+    color: black;
+}
+.main-display-layout{
+    display: flex;
+    gap: 10px;
+    background: #f6f7f9;
+    min-height: 100vh;
+}
+.theme--light.v-navigation-drawer {
+    background-color: #343140 !important;
+}
+.theme--dark.v-app-bar.v-toolbar.v-sheet {
+    background-color: #26378c !important;
+}
+.theme--dark.v-footer > div {
+    background-color: #343140 !important;
+}
+.new-side-active {
+    background: #26378c;
+    opacity: 1;
+    color: white;
+}
+.new-side-active > *{
+    color: white !important;
+}
+.panel-gapping{
+    gap: 10px;
+}
+.d-show-onsmall{
+    display: none !important;
+}
+@media (min-width: 386px) and (max-width: 1263px) {
+    .d-show-onsmall {
+        display: block !important;
+    }
+}

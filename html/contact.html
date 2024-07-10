@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+       <header class="headerSection"><span class="container-fluid" id="success_message"
+                style="color: red; display: none;"></span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-lg-3 col-xl-3 col-12 d-none d-md-block ">
+                        <div class="logo">
+                            <a href="index.html"><img src="images/Logo_Idea_2.webp" alt="Techtopind Electric Motors"
+                                    class="d-block img-fluid mx-auto"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-lg-7 col-xl-7 col-12">
+                        <nav class="navbar navbar-expand-md navbar-light" data-toggle="sticky-onscroll">
+                            <a
+                                class="navbar-brand d-block d-md-none" href="#"><img
+                                    src="images/Logo_Idea_2.webp"
+                                    alt="Techtopind Electric Motors" class="d-block img-fluid"></a><button
+                                class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                                <ul class="navbar-nav mr-auto black-bg">
+                                    <li class="nav-item dropdown has-mega-menu" style="position: static;"><a
+                                            class="nav-link dropdown-toggle"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>Products</span></a>
+                                        <div class="dropdown-menu" id="dropdown">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <h5><a href="product.html">Low Voltage
+                                                                Motors</a></h5>
+                                                        <h6><a href="product.html">Definite
+                                                                Purpose</a></h6>
+                                                    </div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Farm Duty</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Crusher Duty</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Washdown</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Phase Converter
+                                                            Motor</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Premium JM-JP</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">EPAct JM-JP</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Oil Pump</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">PM DC Motor</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Cobra Single
+                                                            Phase Aluminum</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Stainless Steel</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">IEEE 841</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Aerator</a></div>
+                                                    <div class="col-md-12">
+                                                        <h6><a href="product.html">General Purpose</a>
+                                                        </h6>
+                                                    </div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">(GX3) Three Phase
+                                                            Aluminum</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Three Phase Cast
+                                                            Iron</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Three Phase Open
+                                                            Enclosure</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Metric IEC</a></div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Cobra</a></div>
+                                                    <div class="col-md-12">
+                                                        <h6><a href="/categories/15-motor-accessories">Motor
+                                                                Accessories</a></h6>
+                                                    </div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Constant Velocity
+                                                            Fan Kit</a></div>
+                                                    <div class="col-md-12">
+                                                        <h5><a href="product.html">Web Tools</a></h5>
+                                                        <h6><a href="product.html">Engineering
+                                                                Tools</a></h6>
+                                                    </div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Mobile Apps</a></div>
+                                                    <div class="col-md-12">
+                                                        <h6><a href="product.html">Sales Tools</a></h6>
+                                                    </div>
+                                                    <div class="col-md-6"><a class="dropdown-item"
+                                                            href="product.html">Inventory by
+                                                            Location</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="download.html"><span>Downloads</span></a></li>
+                                    <li class="nav-item"><a class="nav-link"
+                                            href="catalog.html"><span>Catalog</span></a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="news.html"><span>News</span></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html"><span>Contact
+                                                Us</span></a>
+                                    </li>
+                                    <li class="nav-item" style="margin-left: 10px; position: relative;"><a
+                                            class="nav-link" href="/DOE" style="white-space: nowrap;"><img
+                                                src="https://www.techtopind.com/static/media/New DOE Button (2 x 1 in).gif"
+                                                alt="GIF DOE Button"
+                                                style="position: absolute; top: -33%; left: 5%; transform: scale(1.15); width: 150px; height: 95px;"></a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar-nav ml-auto black-bg" style="margin-right: -45px;">
+                                    <li class="nav-item"><a class="nav-link" href="sign-up.html"><i
+                                                class="fas fa-unlock"></i> <br>sign up</a>
+                                        <a class="nav-link" href="login.html">
+                                            <hr data-content="OR" class="hr-text">Log in
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <section class="slider-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-none d-md-block">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p>
+                                                    <h1>
+                                                        <center>HIGH QUALITY MOTORS</center>
+                                                    </h1>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-8 col-lg-9 col-xl-9 col-12 pl-0"><a
+                                                    href="#"><img src="images/banc.svg" alt=""
+                                                        class="d-block img-fluid mx-auto w-100"></a></div>
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-block d-md-none">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p>
+                                                    <h1>
+                                                        <center>HIGH QUALITY MOTORS</center>
+                                                    </h1>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item active">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-none d-md-block">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p>
+                                                    <h2>
+                                                        <center>INTRODUCING</center>
+                                                    </h2>
+                                                    <h1>
+                                                        <center>SINGLE PHASE ALUMINUM</center>
+                                                    </h1><br><br>
+                                                    <h2>
+                                                        <center>Equipped with SOLID STATE START SWITCH</center>
+                                                    </h2>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-8 col-lg-9 col-xl-9 col-12 pl-0"><a
+                                                    href="#"><img src="images/i-1.svg" alt=""
+                                                        class="d-block img-fluid mx-auto w-100"></a></div>
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-block d-md-none">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p>
+                                                    <h2>
+                                                        <center>INTRODUCING</center>
+                                                    </h2>
+                                                    <h1>
+                                                        <center>SINGLE PHASE ALUMINUM</center>
+                                                    </h1><br><br>
+                                                    <h2>
+                                                        <center>Equipped with SOLID STATE START SWITCH</center>
+                                                    </h2>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-none d-md-block">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p>
+                                                    <h2>
+                                                        <center>LAUNCHING SOON</center>
+                                                    </h2>
+                                                    <h1>
+                                                        <center>EXPLOSION PROOF MOTORS</center>
+                                                    </h1><br><br>
+                                                    <h2>
+                                                        <center>Stocking up to 250 HP and Certified for Hazardous
+                                                            Location</center>
+                                                    </h2>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-8 col-lg-9 col-xl-9 col-12 pl-0"><a
+                                                    href="#"><img src="images/i-3.jpg" alt=""
+                                                        class="d-block img-fluid mx-auto w-100"></a></div>
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-block d-md-none">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p>
+                                                    <h2>
+                                                        <center>LAUNCHING SOON</center>
+                                                    </h2>
+                                                    <h1>
+                                                        <center>EXPLOSION PROOF MOTORS</center>
+                                                    </h1><br><br>
+                                                    <h2>
+                                                        <center>Stocking up to 250 HP and Certified for Hazardous
+                                                            Location</center>
+                                                    </h2>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="item">
+                                        <div class="row">
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-none d-md-block">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p><a href="">
+                                                            <h1>
+                                                                <center>READY or NOT</center>
+                                                            </h1>
+                                                            <h2>
+                                                                <center>Here They</center>
+                                                            </h2>
+                                                            <h1>
+                                                                <center>COME</center>
+                                                            </h1><br><br>
+                                                            <h2>
+                                                                <center>THE INSPECTORS ARE COMING</center>
+                                                            </h2>
+                                                            <h2>
+                                                                <center>THE INSPECTORS ARE COMING</center>
+                                                            </h2>
+                                                        </a></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8 col-sm-8 col-lg-9 col-xl-9 col-12 pl-0"><a href=""><img
+                                                        src="images/i-4.png" alt=""
+                                                        class="d-block img-fluid mx-auto w-100"></a></div>
+                                            <div
+                                                class="col-md-4 col-sm-4 col-lg-3 col-xl-3 col-12 pr-0 d-block d-md-none">
+                                                <div class="orange-bg px-3 py-4 h-100">
+                                                    <p><a href="">
+                                                            <h1>
+                                                                <center>READY or NOT</center>
+                                                            </h1>
+                                                            <h2>
+                                                                <center>Here They</center>
+                                                            </h2>
+                                                            <h1>
+                                                                <center>COME</center>
+                                                            </h1><br><br>
+                                                            <h2>
+                                                                <center>THE INSPECTORS ARE COMING</center>
+                                                            </h2>
+                                                            <h2>
+                                                                <center>THE INSPECTORS ARE COMING</center>
+                                                            </h2>
+                                                        </a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main role="main" class="middle-content-area">
+            <div class="container-fluid">
+                <section class="mt-2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="stripDesign">
+                                <div class="strip1">
+                                    <div class="formBox pt-2 pb-4 px-4">
+                                        <h6>Find products by parameters:</h6>
+                                        <form class="form-inline" action=""><select class="form-control" id="group">
+                                                <option value="">Motor group</option>
+                                                <option value="Cobra">Cobra</option>
+                                                <option value="Constant Velocity Fan Kit">Constant Velocity Fan Kit
+                                                </option>
+                                                <option value="Crusher Duty">Crusher Duty</option>
+                                                <option value="EPAct JM-JP">EPAct JM-JP</option>
+                                                <option value="Farm">Farm</option>
+                                                <option value="Farm Duty">Farm Duty</option>
+                                                <option value="IEC Single Phase High Torque Aluminum, TEFC">IEC
+                                                    Single Phase High Torque Aluminum, TEFC</option>
+                                                <option value="Metric IEC">Metric IEC</option>
+                                                <option value="Oil Pump">Oil Pump</option>
+                                                <option value="Phase Converter Motor">Phase Converter Motor</option>
+                                                <option value="PM">PM</option>
+                                                <option value="PM DC">PM DC</option>
+                                                <option value="Premium JM-JP">Premium JM-JP</option>
+                                                <option value="Stainless">Stainless</option>
+                                                <option value="Stainless Steel">Stainless Steel</option>
+                                                <option value="Three">Three</option>
+                                                <option value="Three Phase Aluminum">Three Phase Aluminum</option>
+                                                <option value="Three Phase Cast Iron">Three Phase Cast Iron</option>
+                                                <option value="Three Phase Open Enclosure">Three Phase Open
+                                                    Enclosure</option>
+                                                <option value="VFD">VFD</option>
+                                                <option value="Washdown">Washdown</option>
+                                            </select><select class="form-control" id="frame_size">
+                                                <option value="">Frame Size</option>
+                                                <option value="1">1</option>
+                                                <option value="100L">100L</option>
+                                                <option value="112M">112M</option>
+                                                <option value="132M">132M</option>
+                                                <option value="132S">132S</option>
+                                                <option value="140T">140T</option>
+                                                <option value="143JM">143JM</option>
+                                                <option value="143JP">143JP</option>
+                                                <option value="143T">143T</option>
+                                                <option value="143TC">143TC</option>
+                                                <option value="145JM">145JM</option>
+                                                <option value="145JP">145JP</option>
+                                                <option value="145T">145T</option>
+                                                <option value="145TC">145TC</option>
+                                                <option value="145TD">145TD</option>
+                                                <option value="160L">160L</option>
+                                                <option value="160LB34">160LB34</option>
+                                                <option value="160LB35">160LB35</option>
+                                                <option value="160M">160M</option>
+                                                <option value="160MB34">160MB34</option>
+                                                <option value="160MB35">160MB35</option>
+                                                <option value="180L">180L</option>
+                                                <option value="180LB34">180LB34</option>
+                                                <option value="180LB35">180LB35</option>
+                                                <option value="180M">180M</option>
+                                                <option value="180MB34">180MB34</option>
+                                                <option value="180MB35">180MB35</option>
+                                                <option value="180T">180T</option>
+                                                <option value="182JM">182JM</option>
+                                                <option value="182JP">182JP</option>
+                                                <option value="182T">182T</option>
+                                                <option value="182TC">182TC</option>
+                                                <option value="184JM">184JM</option>
+                                                <option value="184JP">184JP</option>
+                                                <option value="184T">184T</option>
+                                                <option value="184TC">184TC</option>
+                                                <option value="2">2</option>
+                                                <option value="200L">200L</option>
+                                                <option value="200LB34">200LB34</option>
+                                                <option value="200LB35">200LB35</option>
+                                                <option value="210T">210T</option>
+                                                <option value="213JM">213JM</option>
+                                                <option value="213JP">213JP</option>
+                                                <option value="213T">213T</option>
+                                                <option value="213TC">213TC</option>
+                                                <option value="213TCZ">213TCZ</option>
+                                                <option value="213TZ">213TZ</option>
+                                                <option value="215JM">215JM</option>
+                                                <option value="215JP">215JP</option>
+                                                <option value="215T">215T</option>
+                                                <option value="215TC">215TC</option>
+                                                <option value="225M">225M</option>
+                                                <option value="225MB34">225MB34</option>
+                                                <option value="225MB35">225MB35</option>
+                                                <option value="225S">225S</option>
+                                                <option value="225SB34">225SB34</option>
+                                                <option value="225SB35">225SB35</option>
+                                                <option value="250M">250M</option>
+                                                <option value="250MB34">250MB34</option>
+                                                <option value="250MB35">250MB35</option>
+                                                <option value="250T">250T</option>
+                                                <option value="254JM">254JM</option>
+                                                <option value="254JP">254JP</option>
+                                                <option value="254T">254T</option>
+                                                <option value="254TC">254TC</option>
+                                                <option value="256JM">256JM</option>
+                                                <option value="256JP">256JP</option>
+                                                <option value="256T">256T</option>
+                                                <option value="256TC">256TC</option>
+                                                <option value="280M">280M</option>
+                                                <option value="280MB34">280MB34</option>
+                                                <option value="280MB35">280MB35</option>
+                                                <option value="280S">280S</option>
+                                                <option value="280SB34">280SB34</option>
+                                                <option value="280SB35">280SB35</option>
+                                                <option value="280T">280T</option>
+                                                <option value="284JM">284JM</option>
+                                                <option value="284JP">284JP</option>
+                                                <option value="284T">284T</option>
+                                                <option value="284TC">284TC</option>
+                                                <option value="284TS">284TS</option>
+                                                <option value="284TSC">284TSC</option>
+                                                <option value="286JM">286JM</option>
+                                                <option value="286JP">286JP</option>
+                                                <option value="286T">286T</option>
+                                                <option value="286TC">286TC</option>
+                                                <option value="286TS">286TS</option>
+                                                <option value="286TSC">286TSC</option>
+                                                <option value="315L">315L</option>
+                                                <option value="315LB34">315LB34</option>
+                                                <option value="315LB35">315LB35</option>
+                                                <option value="315S">315S</option>
+                                                <option value="315SB34">315SB34</option>
+                                                <option value="315SB35">315SB35</option>
+                                                <option value="320T">320T</option>
+                                                <option value="324JM">324JM</option>
+                                                <option value="324JP">324JP</option>
+                                                <option value="324T">324T</option>
+                                                <option value="324TC">324TC</option>
+                                                <option value="324TS">324TS</option>
+                                                <option value="324TSC">324TSC</option>
+                                                <option value="326JM">326JM</option>
+                                                <option value="326JP">326JP</option>
+                                                <option value="326T">326T</option>
+                                                <option value="326TC">326TC</option>
+                                                <option value="326TS">326TS</option>
+                                                <option value="326TSC">326TSC</option>
+                                                <option value="360T">360T</option>
+                                                <option value="364JM">364JM</option>
+                                                <option value="364JP">364JP</option>
+                                                <option value="364T">364T</option>
+                                                <option value="364TC">364TC</option>
+                                                <option value="364TS">364TS</option>
+                                                <option value="364TSC">364TSC</option>
+                                                <option value="365JM">365JM</option>
+                                                <option value="365JP">365JP</option>
+                                                <option value="365T">365T</option>
+                                                <option value="365TC">365TC</option>
+                                                <option value="365TS">365TS</option>
+                                                <option value="365TSC">365TSC</option>
+                                                <option value="400T">400T</option>
+                                                <option value="404T">404T</option>
+                                                <option value="404TC">404TC</option>
+                                                <option value="405T">405T</option>
+                                                <option value="405TC">405TC</option>
+                                                <option value="405TS">405TS</option>
+                                                <option value="405TSC">405TSC</option>
+                                                <option value="440T">440T</option>
+                                                <option value="444T">444T</option>
+                                                <option value="444TC">444TC</option>
+                                                <option value="444TS">444TS</option>
+                                                <option value="444TSC">444TSC</option>
+                                                <option value="445">445</option>
+                                                <option value="445C">445C</option>
+                                                <option value="445T">445T</option>
+                                                <option value="445TC">445TC</option>
+                                                <option value="445TS">445TS</option>
+                                                <option value="445TSC">445TSC</option>
+                                                <option value="447T">447T</option>
+                                                <option value="447TC">447TC</option>
+                                                <option value="447TS">447TS</option>
+                                                <option value="447TSC">447TSC</option>
+                                                <option value="449T">449T</option>
+                                                <option value="449TC">449TC</option>
+                                                <option value="449TL">449TL</option>
+                                                <option value="449TS">449TS</option>
+                                                <option value="449TSC">449TSC</option>
+                                                <option value="56">56</option>
+                                                <option value="56B34">56B34</option>
+                                                <option value="56B35">56B35</option>
+                                                <option value="56C">56C</option>
+                                                <option value="56H">56H</option>
+                                                <option value="56HC">56HC</option>
+                                                <option value="56HJ">56HJ</option>
+                                                <option value="56J">56J</option>
+                                                <option value="56Y">56Y</option>
+                                                <option value="586/7T">586/7T</option>
+                                                <option value="63">63</option>
+                                                <option value="63B14">63B14</option>
+                                                <option value="63B34">63B34</option>
+                                                <option value="63B35">63B35</option>
+                                                <option value="71">71</option>
+                                                <option value="71B34">71B34</option>
+                                                <option value="71B35">71B35</option>
+                                                <option value="80">80</option>
+                                                <option value="80B34">80B34</option>
+                                                <option value="80B35">80B35</option>
+                                                <option value="90">90</option>
+                                                <option value="90L">90L</option>
+                                                <option value="90S">90S</option>
+                                                <option value="L56HJ">L56HJ</option>
+                                            </select><select class="form-control" id="horsepower_60hz">
+                                                <option value="">Horsepower</option>
+                                                <option value="0.12">0.12</option>
+                                                <option value="0.125">0.125</option>
+                                                <option value="0.16">0.16</option>
+                                                <option value="0.18">0.18</option>
+                                                <option value="0.25">0.25</option>
+                                                <option value="0.33">0.33</option>
+                                                <option value="0.35">0.35</option>
+                                                <option value="0.5">0.5</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1">1</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="1.75">1.75</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="5.5">5.5</option>
+                                                <option value="7.5">7.5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                                <option value="25">25</option>
+                                                <option value="30">30</option>
+                                                <option value="40">40</option>
+                                                <option value="50">50</option>
+                                                <option value="60">60</option>
+                                                <option value="75">75</option>
+                                                <option value="100">100</option>
+                                                <option value="125">125</option>
+                                                <option value="150">150</option>
+                                                <option value="200">200</option>
+                                                <option value="215">215</option>
+                                                <option value="250">250</option>
+                                                <option value="300">300</option>
+                                                <option value="350">350</option>
+                                                <option value="400">400</option>
+                                                <option value="450">450</option>
+                                                <option value="500">500</option>
+                                            </select><select class="form-control" id="rpm">
+                                                <option value="">Speed</option>
+                                                <option value="900">900</option>
+                                                <option value="1200">1200</option>
+                                                <option value="1800">1800</option>
+                                                <option value="3600">3600</option>
+                                            </select><select class="form-control" id="voltage">
+                                                <option value="">Voltage</option>
+                                                <option value="110">110</option>
+                                                <option value="115">115</option>
+                                                <option value="115/208-230">115/208-230</option>
+                                                <option value="115/230">115/230</option>
+                                                <option value="12">12</option>
+                                                <option value="180">180</option>
+                                                <option value="208-230">208-230</option>
+                                                <option value="208-230/460">208-230/460</option>
+                                                <option value="220">220</option>
+                                                <option value="230">230</option>
+                                                <option value="230/460">230/460</option>
+                                                <option value="230/460/796">230/460/796</option>
+                                                <option value="24">24</option>
+                                                <option value="460">460</option>
+                                                <option value="575">575</option>
+                                                <option value="90">90</option>
+                                            </select><button type="button" class="btn btn-primary">Search</button><a
+                                                class="clear-icon"><i class="far fa-times-circle"
+                                                    style="font-size: 1.2em;"></i></a></form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="search-autocomplete-form p-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr data-content="OR" class="hr-text">
+                        </div>
+                    </div>
+
+                </section>
+                <section class="contact-area mt-4">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-10 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 col-12 py-3">
+                            <div>
+                                <div class="row pb-3">
+                                    <div class="col-md-5"><img class="d-block img-fluid py-3"
+                                            src="images/Logo_Idea_2.webp" alt="" width="400"
+                                            height="101"></div>
+                                    <div class="col-md-7">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="contactBox"><img class="d-block img-fluid"
+                                                        src="//techtopind.net/files/contact/contact1.jpg" alt=""
+                                                        width="400" height="223"></div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="contactBox"><img class="d-block img-fluid"
+                                                        src="//techtopind.net/files/contact/contact2.jpg" alt=""
+                                                        width="400" height="223"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row py-4">
+                                    <div class="col-md-4">
+                                        <div class="infoBox">
+                                            <div class="icon">&nbsp;</div>
+                                            <div class="text">
+                                                <ul>
+                                                    <li>2815 Colonnades Court</li>
+                                                    <li>Peachtree Corners, Ga 30071</li>
+                                                    <li>USA</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="infoBox">
+                                            <div class="icon">&nbsp;</div>
+                                            <div class="text">
+                                                <ul>
+                                                    <li>Toll-free: <a href="tel:1855TECHTOP">1-855-TECHTOP</a></li>
+                                                    <li>Main: <a href="tel:16784365540">1-678-436-5540</a></li>
+                                                    <li>Fax: <a href="tel:18662041498">1-866-204-1498</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="infoBox">
+                                            <div class="icon">&nbsp;</div>
+                                            <div class="text">
+                                                <ul>
+                                                    <li>Email: <a
+                                                            href="mailto:info@techtopind.com">orders@techtopind.com</a>
+                                                    </li>
+                                                    <li>Website: <a>www.techtop.com</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-4">
+                                    <div class="col-md-12">
+                                        <div class="title mb-5">
+                                            <h4>Click Your Region to Find Your Local Representative <img
+                                                    class="d-block img-fluid" src="images/home-img/logo-small.png"
+                                                    alt=""></h4>
+                                        </div>
+                                        <img src="//techtopind.net/files/contact/map.jpg" alt="Map" usemap="#image-map">
+                                        <map name="image-map">
+                                            <area title="Florida" alt="Florida"
+                                                coords="620,432,620,443,659,451,679,445,708,458,710,485,722,508,746,536,760,519,745,485,739,461,727,442,723,429"
+                                                shape="poly" href="http://techtopind.net/contact/florida" target="">
+
+                                            <area title="South Central Territory" alt="South Central Territory"
+                                                coords="169,278,139,363,196,400,245,408,249,399,278,404,334,471,347,451,378,465,395,499,408,525,430,533,439,539,439,530,435,518,433,507,438,497,452,489,464,482,481,474,501,460,533,458,557,467,582,466,579,453,579,441,546,426,552,407,552,392,552,369,566,350,575,332,567,321,492,324,490,312,351,308"
+                                                shape="poly" href="http://techtopind.net/contact/south-central"
+                                                target="">
+
+                                            <area title="Western Territory" alt="Western Territory"
+                                                coords="97,354,89,329,45,297,50,279,30,239,29,216,23,187,24,160,36,136,36,113,69,54,79,12,100,16,102,37,113,25,109,6,186,22,194,27,205,66,203,92,213,115,221,127,242,135,245,142,236,180,192,175,180,221,169,272,165,290,154,290,150,308,151,321,144,344,139,356"
+                                                shape="poly" href="http://techtopind.net/contact/western" target="">
+
+                                            <area title="Mountain States Territory" alt="Mountain States Territory"
+                                                coords="200,25,200,50,211,67,215,115,235,129,246,134,243,164,239,185,230,183,193,178,182,224,171,261,171,275,365,302,371,225,340,221,350,142,359,56"
+                                                shape="poly" href="http://techtopind.net/contact/midwest" target="">
+
+                                            <area title="Upper Midwest Territory" alt="Upper Midwest Territory"
+                                                coords="362,57,348,177,406,180,437,193,462,192,460,176,538,176,519,152,517,129,526,109,561,78,519,77,493,67,480,60"
+                                                shape="poly" href="http://techtopind.net/contact/upper-midwest"
+                                                target="">
+
+                                            <area title="Central Territory" alt="Central Territory"
+                                                coords="348,180,343,217,375,222,367,300,487,307,493,321,575,320,583,308,594,296,599,285,603,274,605,262,600,241,545,243,477,238,466,205,451,193,415,187"
+                                                shape="poly" href="http://techtopind.net/contact/central" target="">
+
+                                            <area title="North Central Territory" alt="North Central Territory"
+                                                coords="463,175,478,233,536,235,601,238,601,210,594,196,590,171,598,142,597,129,618,116,649,114,632,106,617,101,586,105,575,95,547,110,530,110,520,128,530,158,538,172,541,179"
+                                                shape="poly" href="http://techtopind.net/contact/north-central"
+                                                target="">
+
+                                            <area title="East Central Territory" alt="East Central Territory"
+                                                coords="602,208,602,290,582,316,601,315,676,307,694,283,705,289,711,282,723,280,728,269,734,267,735,260,743,261,760,240,758,235,745,236,735,250,734,235,759,230,751,187,713,194,694,203,681,210,670,203,675,188,675,175,670,159,654,162,654,153,660,142,654,130,639,128,627,140,615,153,615,169,620,182,617,195,612,206"
+                                                shape="poly" href="http://techtopind.net/contact/east-central"
+                                                target="">
+
+                                            <area title="Northeastern Territory" alt="Northeastern Territory"
+                                                coords="751,188,758,228,735,236,734,249,744,240,762,238,774,246,778,256,793,262,789,244,789,237,794,234,797,248,800,259,808,262,817,253,810,242,801,229,812,230,815,217,815,203,840,185,812,197,799,189,791,181,781,179"
+                                                shape="poly" href="http://techtopind.net/contact/northeastern-1"
+                                                target="">
+
+                                            <area title="New England Territory" alt="New England Territory"
+                                                coords="818,191,839,178,854,173,868,162,853,150,849,142,857,131,864,117,869,101,880,100,895,90,890,81,879,76,869,55,858,49,848,49,841,59,841,76,841,91,831,100,802,107,808,137,814,153,815,174"
+                                                shape="poly" href="http://techtopind.net/contact/northeastern-2"
+                                                target="">
+
+                                            <area title="Upstate New York" alt="Upstate New York"
+                                                coords="720,185,720,191,787,177,798,188,816,193,815,153,812,144,810,138,801,109,778,115,763,138,767,149,729,162,728,168,733,172"
+                                                shape="poly" href="http://techtopind.net/contact/northeastern-3"
+                                                target="">
+
+                                            <area title="Southeast Territory" alt="Southeast Territory"
+                                                coords="578,322,600,316,710,307,663,343,685,344,697,359,713,375,729,392,726,428,667,434,662,429,617,431,617,444,602,443,583,446,579,436,546,434,557,407,553,393,553,380"
+                                                shape="poly" href="http://techtopind.net/contact/southeast" target="">
+
+                                            <area title="Central Eastern Territory" alt="Central Eastern Territory"
+                                                coords="712,305,664,343,690,343,735,392,767,356,803,324,803,296,805,285,795,280,791,264,774,258,775,247,762,240,737,262,726,271,723,282,710,284,704,289,695,282,672,310"
+                                                shape="poly" href="http://techtopind.net/contact/carolina" target="">
+                                        </map>
+                                    </div>
+                                </div>
+                                <!--<meta http-equiv="Refresh" content="0;url=dealers"> -->
+                                <!-- Global site tag (gtag.js) - Google Analytics --><!--    
+                    <p><a href="dealers">Redirecting...</a></p>
+                    <script>window.location = "dealers";</script>
+                     -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-12 col-xl-4 col-lg-3 col-12 pl-4">
+                        <!-- <p>2815 Colonnades Court</p>
+                        <p><small>Peachtree Corners, GA 30071</small></p> -->
+                        <div class="logo">
+                            <a href="#"> <img src="images/Logo_Idea_2.webp" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xl-5 col-lg-5 col-12 text-right pr-5">
+                        <p class="text-center">Copyrights Pheonix converter all rights reserved</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xl-3 col-lg-4 col-12 text-end">
+                        <p><i class="fas fa-phone"></i> Tel.<a href="tel:6784365540">678.436.5540</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@techtopind.com">info@techtopind.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
