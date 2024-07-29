@@ -14,11 +14,11 @@
                             <div class="download_items">
                                 <div class="row">
                                     @foreach($downloadable->pdfs as $pdf)
-                                    <div class="col-md-3 col-sm-3 col-lg-2 col-xl-2 col-6">
-                                        <a href="{{$pdf->pdf_url}}">
-                                            <img src="{{$pdf->image_url}}" alt="" class="d-block img-fluid mx-auto w-100">
-                                        </a>
-                                    </div>
+                                        <div class="col-md-3 col-sm-3 col-lg-2 col-xl-2 col-6">
+                                            <a href="{{$pdf->pdf_url}}">
+                                                <img src="{{$pdf->image_url}}" alt="" class="d-block img-fluid mx-auto w-100">
+                                            </a>
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>
