@@ -1286,7 +1286,6 @@ var render = function () {
                         [
                           _c("v-file-input", {
                             attrs: {
-                              accept: "image/*",
                               "error-messages": _vm.errors.image_data_sheet,
                               label: "Data Sheet",
                             },

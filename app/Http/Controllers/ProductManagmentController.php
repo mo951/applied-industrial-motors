@@ -25,7 +25,7 @@ class ProductManagmentController extends Controller
      */
     public function index()
     {
-        $query = $this->listRep->listFilteredQuery(['title', 'value',])
+        $query = $this->listRep->listFilteredQuery(['motor_name', 'price',])
         ->select('product_managments.*');
 
         if(isset($_GET['perpage'])&&intval($_GET['perpage'])>0){
@@ -105,9 +105,13 @@ class ProductManagmentController extends Controller
      */
     public function update(Request $request, $id)
     {   
+        
         $productManagment = ProductManagment::find($id);
+       
         $product = $productManagment->update($request->only('motorgroup_id', 'framesize_id', 'horsepower_id', 'speed_id', 'voltage_id', 'price', 
         'multiplier_code', 'mounting', 'motor_name', 'slug', 'category_ids'));
+
+        // dd($product);
 
         if($request->image_2d_drwaing){
             $this->file->create([$request->image_2d_drwaing], 'product_managments_two_d_drawing', $id, 1);
@@ -120,7 +124,7 @@ class ProductManagmentController extends Controller
         if($request->image_data_sheet){
             $this->file->create([$request->image_data_sheet], 'product_managments_datasheet', $id, 1);
         }
-
+        return redirect()->back();
         return new ProductManagmentResource($product);
     }
 

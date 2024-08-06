@@ -146,7 +146,7 @@
                         </v-col>
 
                         <v-col cols="12" cm="12" class="pb-0">
-                            <v-file-input accept="image/*" v-model="form.image_data_sheet" :error-messages="errors.image_data_sheet"
+                            <v-file-input v-model="form.image_data_sheet" :error-messages="errors.image_data_sheet"
                                 label="Data Sheet"></v-file-input>
                         </v-col>
 

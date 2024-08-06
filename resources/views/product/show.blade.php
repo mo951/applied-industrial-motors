@@ -42,9 +42,19 @@
                                             </pre>
                                         </tbody>
                                     </table>
-                                    {{-- <ul>
-                                        <li><a href="https://techtopind.net/files/datasheets/GX3-AL-TF-56C-4-B-D-.75-BRK.pdf">datasheet</a></li>
-                                    </ul> --}}
+                                    @if($product[0]->image_url || $product[0]->image_url_three_drawing || $product[0]->image_url_datasheet)
+                                        <ul>
+                                            @if($product[0]->image_url)
+                                                <li><a href="{{$product[0]->image_url}}">2d drawing</a></li>
+                                            @endif
+                                            @if($product[0]->image_url_three_drawing)
+                                                <li><a href="{{$product[0]->image_url_three_drawing}}">3d drawing</a></li>
+                                            @endif
+                                            @if($product[0]->image_url_datasheet)
+                                                <li><a href="{{$product[0]->image_url_datasheet}}">datasheet</a></li>
+                                            @endif
+                                        </ul>
+                                    @endif
                                 </article>
                             </div>
                         </div>
